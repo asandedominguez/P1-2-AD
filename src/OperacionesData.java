@@ -22,8 +22,7 @@ public class OperacionesData {
 
     public static void Lcadena(String ruta) {
         try {
-            File fichero = new File(ruta);
-            DataInputStream lectura = new DataInputStream(new FileInputStream(fichero));
+            DataInputStream lectura = new DataInputStream(new FileInputStream(ruta));
 
             System.out.println("tamaño final do ficheiro: " + lectura.available() + " bytes");
 
