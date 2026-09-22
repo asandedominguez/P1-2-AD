@@ -26,7 +26,7 @@ public class OperacionesImagenes {
             while ((i = lectura.read()) != -1) {
                 copia.write(i);
             }
-            System.out.println("reemplazada compeletada");
+            System.out.println("reemplazada entera compeletada");
 
         } catch (IOException e) {
             System.out.println("No se encontró la imagen");

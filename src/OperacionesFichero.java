@@ -31,7 +31,7 @@ public class OperacionesFichero {
             while ((i = lectura.read()) != -1) {
                 copia.write(i);
             }
-            System.out.println("copia compeletada");
+            System.out.println("copia entera compeletada");
         }
         catch (IOException e) {
             System.out.println("Error al leer el fichero");

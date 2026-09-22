@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class OperacionesData {
-    public static void ejercicio7(String ruta, String cadena) {
+    public static void Ecadena(String ruta, String cadena) {
         try {
             File fichero = new File(ruta);
             int n = 0;
@@ -20,7 +20,7 @@ public class OperacionesData {
         }
     }
 
-    public static void ejercicio8(String ruta) {
+    public static void Lcadena(String ruta) {
         try {
             File fichero = new File(ruta);
             DataInputStream lectura = new DataInputStream(new FileInputStream(fichero));
@@ -44,7 +44,7 @@ public class OperacionesData {
         String ruta = "/home/dam26/texto3.txt";
         String cadena = "o tempo está xélido";
 
-        ejercicio7(ruta, cadena);
-        ejercicio8(ruta);
+        Ecadena(ruta, cadena);
+        Lcadena(ruta);
     }
 }
