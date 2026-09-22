@@ -3,9 +3,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class OperacionesImagenes {
-    public static void main (String[] args) {
-
-        //Byte a Byte
+    public static void ejercicio3() {
         try {
             FileInputStream lectura = new FileInputStream("/home/dam26/IMAGEN.jpg");
             FileOutputStream copia = new FileOutputStream("/home/dam26/IMAGEN2-AD.jpg");
@@ -18,8 +16,9 @@ public class OperacionesImagenes {
         } catch (IOException e) {
             System.out.println("No se encontró la imagen");
         }
+    }
 
-        //Copia total - Pesa el doble
+    public static void ejercicio4() {
         try {
             FileInputStream lectura = new FileInputStream("/home/dam26/IMAGEN.jpg");
             FileOutputStream copia = new FileOutputStream("/home/dam26/IMAGEN3.jpg", true);
@@ -33,6 +32,9 @@ public class OperacionesImagenes {
             System.out.println("No se encontró la imagen");
         }
     }
+    public static void main (String[] args) {
+        ejercicio3();
+        ejercicio4();
+    }
 }
-
 
